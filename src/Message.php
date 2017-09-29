@@ -11,7 +11,7 @@
  * All Rights Reserved.
  * ----------------------------------------------
  */
-namespace Phalcon\Ext\Mailer;
+namespace Jimigrunge\Phalcon\Mailer;
 
 /**
  * Class Message

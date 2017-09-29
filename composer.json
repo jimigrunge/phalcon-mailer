@@ -1,5 +1,5 @@
 {
-    "name": "phalcon-ext/mailer",
+    "name": "jimigrunge/phalcon-mailer",
     "type": "library",
     "description": "Mailer component as wrapper over SwiftMailer for Phalcon.",
     "keywords": ["mailer", "phalcon", "phalcon-ext", "phalcon-mailer"],
@@ -11,18 +11,23 @@
         {
             "name": "Stanislav Kiryukhin",
             "email": "korsar.zn@gmail.com",
-            "role": "Founder and project lead"
+            "role": "Original developer"
+        },
+        {
+            "name": "James Grundner",
+            "email": "james@jimigrunge.com",
+            "role": "Project Lead"
         }
     ],
 
     "require": {
-        "php": ">=5.4.0",
-        "swiftmailer/swiftmailer": ">=5.3"
+        "php": "~7.0",
+        "swiftmailer/swiftmailer": "~6.0"
     },
 
     "autoload": {
         "psr-4": {
-            "Phalcon\\Ext\\Mailer\\": "src/"
+            "Jimigrunge\\Phalcon\\Mailer\\": "src/"
         }
     }
 }

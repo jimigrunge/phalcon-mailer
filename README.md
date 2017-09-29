@@ -74,18 +74,6 @@ $config = [
 ];
 ```
 
-**PHP Mail**
-
-```php
-$config = [
-    'driver' 	 => 'mail',
-    'from'		 => [
-    	'email' => 'example@gmail.com',
-    	'name'	=> 'YOUR FROM NAME'
-    ]
-];
-```
-
 ## Example ##
 
 ### createMessage() ###

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.0.0 (2017-09-29)
+- Updated Swiftmailer to version 6
+- Removed functionality dependent on removed Swift_MailTransport class
+
 ## v2.0.3 (2015-12-18)
 - Added method `contentAlternative()` - optionally an alternative text body 
 - fix [#5](https://github.com/phalcon-ext/mailer/issues/5)

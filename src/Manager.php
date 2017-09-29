@@ -10,7 +10,7 @@
  * All Rights Reserved.
  * ----------------------------------------------
  */
-namespace Phalcon\Ext\Mailer;
+namespace Jimigrunge\Phalcon\Mailer;
 
 use Phalcon\Config;
 use Phalcon\Mvc\User\Component;
@@ -172,7 +172,6 @@ class Manager extends Component
      * Supported driver-mail:
      * - smtp
      * - sendmail
-     * - mail
      *
      */
     protected function registerSwiftTransport()
@@ -180,10 +179,6 @@ class Manager extends Component
         switch ($driver = $this->getConfig('driver')) {
             case 'smtp':
                 $this->transport = $this->registerTransportSmtp();
-                break;
-
-            case 'mail':
-                $this->transport = $this->registerTransportMail();
                 break;
 
             case 'sendmail':
@@ -287,18 +282,6 @@ class Manager extends Component
         } else {
             return $str;
         }
-    }
-
-    /**
-     * Create a new MailTransport instance.
-     *
-     * @return \Swift_MailTransport
-     *
-     * @see \Swift_MailTransport
-     */
-    protected function registerTransportMail()
-    {
-        return $this->getDI()->get('\Swift_MailTransport');
     }
 
     /**
