@@ -1,4 +1,4 @@
-Phalcon\Ext\Mailer
+JimiGrunge\Phalcon\Mailer
 ==============
 
 Mailer wrapper over SwiftMailer for Phalcon.
@@ -14,7 +14,7 @@ Create the composer.json file as follows:
 ```
 {
 	"require": {
-		"phalcon-ext/mailer": "~2.0"
+		"jimigrunge/phalcon-mailer": "~3.0"
 	}
 }
 ```
