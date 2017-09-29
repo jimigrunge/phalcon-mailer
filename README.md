@@ -1,4 +1,4 @@
-JimiGrunge\Phalcon\Mailer
+Jimigrunge\Phalcon\Mailer
 ==============
 
 Mailer wrapper over SwiftMailer for Phalcon.
